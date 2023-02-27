@@ -22,7 +22,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/WISPO-POP/Optimal-Microgrid-Configuration">
-    <img src="Images/logo.png" alt="Logo" width="1225" height="334">
+    <img src="Images/logo.png" alt="Logo" width="1225" height="300">
   </a>
 
 <h3 align="center">Optimal Microgrid Configuration</h3>
@@ -80,17 +80,17 @@ Grid Data
 
 > IEEE13
 
-* ieee13_feeder.dss -- DSS file of the IEEE13 test system data
-* ieee13_feeder_nosub.dss -- DSS file of the IEEE13 test system data with the substation disconnected
+> * ieee13_feeder.dss -- DSS file of the IEEE13 test system data
+> * ieee13_feeder_nosub.dss -- DSS file of the IEEE13 test system data with the substation disconnected
 
 > SMARTDS
-* Master_primary.json -- JSON file of the modified (reduced to primary circuit) SMART-DS feeder data
-* Master.dss -- DSS file of the original SMART-DS feeder data
-* ... additional supporting data subfiles
+> * Master_primary.json -- JSON file of the modified (reduced to primary circuit) SMART-DS feeder data
+> * Master.dss -- DSS file of the original SMART-DS feeder data
+> * ... additional supporting data subfiles
 
 Additional Data
-* ref_ieee13.json -- JSON file of the PowerModels dictionary of the IEEE13 data
-* ref_smartds.json -- JSON file of the PowerModels dictionary of the SMART-DS data
+> * ref_ieee13.json -- JSON file of the PowerModels dictionary of the IEEE13 data
+> * ref_smartds.json -- JSON file of the PowerModels dictionary of the SMART-DS data
 
 
 <!-- ### Built With
