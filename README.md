@@ -22,7 +22,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/WISPO-POP/Optimal-Microgrid-Configuration">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Optimal Microgrid Configuration</h3>
