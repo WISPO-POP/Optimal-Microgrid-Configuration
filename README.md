@@ -79,7 +79,6 @@ This repository provides the data files used in the test case of the paper title
 Grid Data
 
 > IEEE13
-
 > * ieee13_feeder.dss -- DSS file of the IEEE13 test system data
 > * ieee13_feeder_nosub.dss -- DSS file of the IEEE13 test system data with the substation disconnected
 
