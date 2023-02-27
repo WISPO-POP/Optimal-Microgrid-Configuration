@@ -1,0 +1,62 @@
+Clear
+
+New Circuit.substation_p17uhs13_69 bus1=p17uhs13_69 pu=1.0 basekV=69.0 R1=1e-05 X1=1e-05 R0=1e-05 X0=1e-05
+
+Redirect LineCodes.dss
+Redirect p17uhs13_1247--p17udt12006/LineCodes.dss
+Redirect p17uhs13_1247--p17udt1222/LineCodes.dss
+Redirect p17uhs13_1247--p17udt1291/LineCodes.dss
+Redirect p17uhs13_1247--p17udt1410/LineCodes.dss
+Redirect p17uhs13_1247--p17udt8595/LineCodes.dss
+Redirect Lines.dss
+Redirect p17uhs13_1247--p17udt12006/Lines.dss
+Redirect p17uhs13_1247--p17udt1222/Lines.dss
+Redirect p17uhs13_1247--p17udt1291/Lines.dss
+Redirect p17uhs13_1247--p17udt1410/Lines.dss
+Redirect p17uhs13_1247--p17udt8595/Lines.dss
+Redirect Transformers.dss
+Redirect p17uhs13_1247--p17udt12006/Transformers.dss
+Redirect p17uhs13_1247--p17udt1222/Transformers.dss
+Redirect p17uhs13_1247--p17udt1291/Transformers.dss
+Redirect p17uhs13_1247--p17udt1410/Transformers.dss
+Redirect p17uhs13_1247--p17udt8595/Transformers.dss
+Redirect Regulators.dss
+!Redirect LoadShapes.dss
+Redirect p17uhs13_1247--p17udt12006/Loads.dss
+Redirect p17uhs13_1247--p17udt1222/Loads.dss
+Redirect p17uhs13_1247--p17udt1291/Loads.dss
+Redirect p17uhs13_1247--p17udt1410/Loads.dss
+Redirect p17uhs13_1247--p17udt8595/Loads.dss
+Redirect p17uhs13_1247--p17udt12006/Capacitors.dss
+Redirect p17uhs13_1247--p17udt1222/Capacitors.dss
+Redirect p17uhs13_1247--p17udt1291/Capacitors.dss
+Redirect p17uhs13_1247--p17udt1410/Capacitors.dss
+Redirect p17uhs13_1247--p17udt8595/Capacitors.dss
+Redirect Storage.dss
+Redirect p17uhs13_1247--p17udt12006/Storage.dss
+Redirect p17uhs13_1247--p17udt1222/Storage.dss
+Redirect p17uhs13_1247--p17udt1291/Storage.dss
+Redirect p17uhs13_1247--p17udt1410/Storage.dss
+Redirect p17uhs13_1247--p17udt8595/Storage.dss
+Redirect p17uhs13_1247--p17udt12006/PVSystems.dss
+Redirect p17uhs13_1247--p17udt1222/PVSystems.dss
+Redirect p17uhs13_1247--p17udt1291/PVSystems.dss
+Redirect p17uhs13_1247--p17udt1410/PVSystems.dss
+Redirect p17uhs13_1247--p17udt8595/PVSystems.dss
+!new monitor.m1 element=Line.sb9_p17uhs13_1247_407 mode=0
+!new monitor.m2 element=Line.sb9_p17uhs13_1247_407 mode=1
+!new energymeter.m3 Line.sb9_p17uhs13_1247_407
+
+Set Voltagebases=[0.12, 0.208, 0.24, 0.48, 7.2, 12.47, 69.0]
+
+Calcvoltagebases
+
+Buscoords Buscoords.dss
+!set maxcontroliter=50
+
+!Solve mode=yearly stepsize=15m number=35040
+!Export monitors m1
+!Plot monitor object= m1 channels=(7 9 11 )
+!Export monitors m2
+!Plot monitor object= m2 channels=(1 3 5 )
+!Plot Profile Phases=All

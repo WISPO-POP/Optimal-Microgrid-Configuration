@@ -1,0 +1,8 @@
+New Capacitor.p17uc73 bus1=p17udt5476 phases=3 Kv=12.47 conn=Wye Kvar=450.0
+
+New CapControl.p17uc73 Capacitor=p17uc73 Element=Line.l(r:p17udt3353-p17udt5476) Terminal=1 delay=100.0 Type=voltage Vmin=120.5 Vmax=125.0 Ptratio=59.99631547328862 Ctratio=100.0
+
+New Capacitor.p17uc79 bus1=p17udt7957 phases=3 Kv=12.47 conn=Wye Kvar=300.0
+
+New CapControl.p17uc79 Capacitor=p17uc79 Element=Line.l(r:p17udt3299-p17udt7957) Terminal=1 delay=100.0 Type=voltage Vmin=120.5 Vmax=125.0 Ptratio=59.99631547328862 Ctratio=100.0
+
